@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Torneo de Pádel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Torneo de Pádel</h1>
+    </header>
+    <main>
+        <section id="register">
+            <h2>Registrar Equipos y Jugadores</h2>
+            <form id="register-form">
+                <label for="team-name">Nombre del Equipo:</label>
+                <input type="text" id="team-name" required>
+                <label for="player1">Jugador 1:</label>
+                <input type="text" id="player1" required>
+                <label for="player2">Jugador 2:</label>
+                <input type="text" id="player2" required>
+                <button type="submit">Registrar Equipo</button>
+            </form>
+        </section>
+        <section id="teams">
+            <h2>Equipos Registrados</h2>
+            <ul id="teams-list"></ul>
+        </section>
+        <section id="matches">
+            <h2>Sorteo de Partidos</h2>
+            <button id="draw-matches">Sortear Partidos</button>
+            <ul id="matches-list"></ul>
+        </section>
+        <section id="results">
+            <h2>Registrar Resultados</h2>
+            <div id="results-form"></div>
+        </section>
+        <section id="standings">
+            <h2>Clasificación</h2>
+            <ul id="standings-list"></ul>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
